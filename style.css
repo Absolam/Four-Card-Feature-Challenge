@@ -1,0 +1,150 @@
+html {
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 350px;
+
+  margin: 50px auto;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+
+  position: relative;
+
+  box-shadow: 0 8px 30px -10px hsl(229, 6%, 66%);
+  border-radius: 10px;
+}
+
+h2,
+p {
+  padding-left: 30px;
+}
+
+h2 {
+  padding-top: 30px;
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  padding-top: 5px;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 28px;
+  color: hsl(234, 12%, 34%);
+}
+
+.icon {
+  width: 64px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header-bold {
+  font-weight: 600;
+  font-size: 28px;
+  color: hsl(234, 12%, 34%);
+}
+
+.header-desc {
+  color: hsl(229, 6%, 66%);
+  margin: 10px 0;
+}
+
+.supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+div p {
+  color: hsl(229, 6%, 66%);
+}
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    margin: 40px auto;
+  }
+
+  .supervisor {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    position: relative;
+    top: 60%;
+  }
+
+  .calculator {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    position: relative;
+    top: 60%;
+  }
+
+  .team-builder {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .karma {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  header {
+    grid-column: 1 / -1;
+    align-self: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .header-desc {
+    margin: 10px 300px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .header-bold {
+    font-size: 36px;
+  }
+}
